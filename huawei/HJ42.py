@@ -68,8 +68,6 @@ if __name__ == '__main__':
     for i in range(len(nums)):
         num = int(nums[i])
         temp_ans = ""
-        if num == 0:
-            continue
         if num >= 100:
             temp = num // 100
             num %= 100
@@ -87,6 +85,5 @@ if __name__ == '__main__':
             temp_ans += f" {bits_in_20[num]}"
         temp_ans += f" {units[i]} "
         ans = temp_ans + ans
-
     ans.strip()
     print(ans)
